@@ -1,0 +1,22 @@
+- name: Primeira Play
+  hosts: all
+  tasks:
+    - name: Criando a primeira bagaceira
+      file:
+        path: /tmp/teste.conf
+        mode: 0664
+        owner: ec2-user
+        state: touch
+
+    - name: Validando a criacao do arquivo
+      command: ls /tmp/teste.conf
+
+    - name: Criando segundo arquivo
+      file:
+        path: /tmp/teste2.conf
+        mode: 0664
+        owner: ec2-user
+        state: touch
+
+    - name: Validando a criacao do 2 arquivo
+      command: ls /tmp/teste2.conf

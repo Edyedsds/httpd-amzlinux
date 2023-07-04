@@ -1,0 +1,9 @@
+- name: Criar grupo dev
+  group:
+    name: dev
+- name: Criar grupo qa
+  group:
+    name: qa
+- name: Criar grupo prod
+  group:
+    name: prod

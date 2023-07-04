@@ -1,0 +1,11 @@
+- name: Compreendo as variaveis
+  hosts: all
+  vars:
+  pacote: vim
+  so: debian
+
+tasks: 
+- name: qual pacote sera instalado
+  debug:
+   msg: "o pacote selecionado e: {{ pacote }}."
+

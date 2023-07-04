@@ -1,0 +1,15 @@
+[pointer]
+54.165.175.176 ansible_user=admin
+
+[webservers]
+server1
+server2
+server3
+
+[dev]
+server1
+
+[qa]
+server2
+
+

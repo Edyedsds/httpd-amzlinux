@@ -1,0 +1,11 @@
+portas_num: [21,22,80,443]
+
+usuarios:
+  joaozinho:
+    username: joao
+    uid: 1212
+    shell: /bin/bash
+  mariazinha:
+    username: maria
+    uid: 2233
+    shell: /bin/sh

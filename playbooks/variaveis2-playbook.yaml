@@ -1,0 +1,11 @@
+- name: Working with variables
+  hosts: all
+  vars_files: minhas-variaveis.yaml
+  
+  tasks:
+    - name: Segundo item da lista de portas
+      debug:
+        msg: "A segunda porta da lista e'{{ portas_num[1] }}."
+    - name: Mostre o uid do usuario Joaozinho
+      debug:
+        msg: "A segunda porta da lista e'{{ usuarios.joaozinho.uid }}."

@@ -1,0 +1,9 @@
+- name: Import Task Example Playbook
+  hosts: all
+  tasks:
+    - name: Criando um arquivo de teste
+      ansible.builtin.file:
+        path: /tmp/play.txt
+        state: touch
+    - name: Importanto Tasks
+      import_tasks: grupos.yaml

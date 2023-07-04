@@ -1,0 +1,8 @@
+- name: Configurar usuarios com variaveis do host_vars
+  hosts: all
+  become: true
+  tasks:
+    - name: Criando usuarios com variaveis do host_vars
+      user:
+        name: "{{ usuario }}"
+        state: present
